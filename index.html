@@ -1,0 +1,68 @@
+<!DOCTYPE html>. <!-- declare the type of document to the website
+                    not HTML tag, but a doctype delaration-->
+
+<html lang="en"> <!-- using English -->
+
+<head>
+
+    <meta charset="UTF-8"> <!-- unicode, must have. 
+                            GB2312 is a symplified chinese code, not unicode -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>I am shuai</h1>
+
+        <nav aria-label="main navigation"></nav> 
+        <!-- a commonly used semantic tag,
+             use aria to add extra semantic -->
+             <ul class="nav-list">
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contacts</a></li>
+             </ul>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Innovative Tech Gadgets</h2>
+            <p>Explore our latest range of tech gear designed for performance and style.</p>
+        </section>
+
+        <section class="products" aria-lable="Product list">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Wireless Headphones" />
+                    <h3>Wireless Headphones</h3>
+                    <p>High-quality sound with noise cancellation.</p>
+                    <button type="button" aria-label="Buy Wireless Headphones">Buy Now</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=300&q=80" alt="Smart Watch" />
+                    <h3>Smart Watch</h3>
+                    <p>Track your health and stay connected on the go.</p>
+                    <button type="button" aria-label="Buy Smart Watch">Buy Now</button>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="Portable Speaker" />
+                    <h3>Portable Speaker</h3>
+                    <p>Crystal clear sound in a compact design.</p>
+                    <button type="button" aria-label="Buy Portable Speaker">Buy Now</button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
