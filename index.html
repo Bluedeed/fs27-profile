@@ -1,4 +1,4 @@
-<!DOCTYPE html>. <!-- declare the type of document to the website
+<!DOCTYPE html><!-- declare the type of document to the website
                     not HTML tag, but a doctype delaration-->
 
 <html lang="en"> <!-- using English -->
@@ -22,20 +22,21 @@
         <!-- a commonly used semantic tag,
              use aria to add extra semantic -->
              <ul class="nav-list">
-                <li><a href="">Products</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contacts">Contacts</a></li>
              </ul>
 
     </header>
 
     <main>
+
         <section class="hero">
             <h2>Innovative Tech Gadgets</h2>
             <p>Explore our latest range of tech gear designed for performance and style.</p>
         </section>
 
-        <section class="products" aria-lable="Product list">
+        <section id="products" class="products" aria-lable="Product list">
             <h2>Our Products</h2>
             <div class="product-grid">
 
@@ -62,7 +63,36 @@
 
             </div>
         </section>
+
+        <section id="about" class="about" aria-label="About Tech Gear">
+            <h2>About Us</h2>
+            <p>We are passionate about creating innovative tech products that enhance your lifestyle.</p>
+        </section>
+
+        <section id="contacts" class="contact" aria-label="contact heading">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to work together? Send us a message below and we'll get back to you!</p>
+            <form class="contact-form" aria-label="contact form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" value="male" name="gender" id="male">
+                    <label for="female">Female</label>
+                    <input type="radio" value="female" name="gender" id="female">
+                </div>
+                <label for="message">Message</label>
+                <textarea name="" id="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
     </main>
+
+    <footer>
+        <p>&copy; 2025 Tech Gear. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
